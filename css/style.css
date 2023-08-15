@@ -1,0 +1,422 @@
+/*Rainbow card*/
+
+.card1 {
+    --background: rgba(255, 255, 255, 0.25);
+    --blue: #1a57da;
+    --green: #1FC11B;
+    --yellow: #FFD913;
+    --orange: #FF9C55;
+    --red: #FF5555;
+    --violet: #fd91f1;
+    width: 250px;
+    height: 310px;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background: var(--background);
+    padding: 1rem;
+    border-radius: 15px;
+    border: 0px solid var(--violet);
+    box-shadow: 10px -10px 0 -0px var(--background), 10px -10px var(--green),
+           20px -20px 0 -0px var(--background), 10px -10px var(--blue),
+           30px -30px 0 -0px var(--background), 20px -20px var(--yellow), 
+           40px -40px 0 -0px var(--background), 30px -30px var(--orange), 
+           50px -50px 0 -0px var(--background), 40px -40px var(--red);
+    transition: box-shadow 1s, top 1s, left 1s;
+   }
+   
+   
+   /*Hover*/
+   .card1:hover {
+    box-shadow: 0 0 0 -3px var(--background), 0 0 0 0 var(--green),
+         0 0 0 -3px var(--background), 0 0 0 0 var(--blue),
+         0 0 0 -3px var(--background), 0 0 0 0  var(--yellow),
+         0 0 0 -3px var(--background), 0 0 0 0  var(--orange),
+         0 0 0 -3px  var(--background), 0 0 0 0  var(--red);
+        
+   }
+
+   
+   .card1 img {
+    
+    border-radius: 10px;
+    
+   }
+   .card1 h5 {
+    font-weight: bold;
+    font-family:monospace;
+   }
+
+   
+   .InputContainer {
+    width: 210px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom,rgb(227, 213, 255),rgb(255, 231, 231));
+    border-radius: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
+  }
+  
+  .input {
+    width: 200px;
+    height: 40px;
+    border: none;
+    outline: none;
+    caret-color: rgb(255, 81, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding-left: 15px;
+    letter-spacing: 0.8px;
+    color: rgb(19, 19, 19);
+    font-size: 13.4px;
+  }
+  
+  
+  .cardx {
+    margin: auto;
+    margin-top: 1rem;
+    width: 240px;
+    height: 195px;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+    overflow: visible;
+   }
+   
+   .cardx .item {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   
+   .item:hover {
+    transform: scale(0.95);
+    transition: all 0.3s;
+   }
+   
+   .item svg {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 7px;
+   }
+   
+   .item--1 {
+    background: #c7c7ff;
+   }
+   
+   .item--2 {
+    background: #99b4ff;
+   }
+   
+   .item--3 {
+    background: #a9ecbf;
+   }
+   
+   .item--4 {
+    background: #d9aefc;
+   }
+   
+   .quantity {
+    font-size: 25px;
+    font-weight: 600;
+   }
+   
+   .text {
+    font-size: 12px;
+    font-family: inherit;
+    font-weight: 600;
+   }
+   
+   .text--1 {
+    color: rgba(149,149,255,1);
+   }
+   
+   .text--2 {
+    color: #668cf7;
+   }
+   
+   .text--3 {
+    color: rgba(66,193,110,1);
+   }
+   
+   .text--4 {
+    color: #b359fd;
+   }
+
+   .cardc {
+    width: 270px;
+    height: 135px;
+    position: absolute;
+    margin-left: 30px;
+    padding: 30px;
+    padding-right: 2em;
+    background: radial-gradient(178.94% 106.41% at 26.42% 106.41%, #FFF7B1 0%, rgba(255, 255, 255, 0) 71.88%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #FFFFFF;
+    box-shadow: 0px 155px 62px rgba(0, 0, 0, 0.01), 0px 87px 52px rgba(0, 0, 0, 0.05), 0px 39px 39px rgba(0, 0, 0, 0.09), 0px 10px 21px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 23px;
+    transition: all 0.8s cubic-bezier(0.15, 0.83, 0.66, 1);
+    cursor: pointer;
+  }
+  
+  .cardc:hover {
+    transform: scale(1.05);
+  }
+  
+  .containerc {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    right: -65px;
+    top: -80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.7);
+  }
+  
+  .cloud {
+    width: 130px;
+    
+  }
+  
+  .front {
+    padding-top: 45px;
+    margin-left: -70px;
+    display: inline;
+    position: absolute;
+    z-index: 11;
+    animation: clouds 8s infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .back {
+    margin-top: -30px;
+    margin-left: 130px;
+    z-index: 12;
+    animation: clouds 12s infinite;
+    animation-timing-function: ease-in-out;
+  }
+  
+  .right-front {
+    width: 45px;
+    height: 45px;
+    border-radius: 50% 50% 50% 0%;
+    background-color: #4c9beb;
+    display: inline-block;
+    margin-left: -25px;
+    z-index: 5;
+  }
+  
+  .left-front {
+    width: 65px;
+    height: 65px;
+    border-radius: 50% 50% 0% 50%;
+    background-color: #4c9beb;
+    display: inline-block;
+    z-index: 5;
+  }
+  
+  .right-back {
+    width: 50px;
+    height: 50px;
+    border-radius: 50% 50% 50% 0%;
+    background-color: #4c9beb;
+    display: inline-block;
+    margin-left: -20px;
+    z-index: 5;
+  }
+  
+  .left-back {
+    width: 30px;
+    height: 30px;
+    border-radius: 50% 50% 0% 50%;
+    background-color: #4c9beb;
+    display: inline-block;
+    z-index: 5;
+  }
+  
+  .sun {
+    width: 70px;
+    height: 70px;
+    background: -webkit-linear-gradient(to right, #fcbb04, #fffc00);
+    background: linear-gradient(to right, #fcbb04, #fffc00);
+    border-radius: 60px;
+    display: inline;
+    position: absolute;
+  }
+  
+  .sunshine {
+    animation: sunshines 2s infinite;
+  }
+  
+  @keyframes sunshines {
+    0% {
+      transform: scale(1);
+      opacity: 0.6;
+    }
+  
+    100% {
+      transform: scale(1.4);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes clouds {
+    0% {
+      transform: translateX(15px);
+    }
+  
+    50% {
+      transform: translateX(0px);
+    }
+  
+    100% {
+      transform: translateX(15px);
+    }
+  }
+  
+  .cardc-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .cardc-header span:first-child {
+    word-break: break-all;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 135%;
+    color: rgba(87, 77, 51, 0.66);
+  }
+  
+  .cardc-header span:last-child {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 135%;
+    color: rgba(87, 77, 51, 0.33);
+  }
+  
+  .temp {
+    position: absolute;
+    left: 20px;
+    bottom: 8px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    color: rgba(87, 77, 51, 1);
+  }
+  
+  .temp-scale {
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    right: 35px;
+    bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.06);
+    border-radius: 9px;
+  }
+  
+  .temp-scale span {
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 134.49%;
+    color: rgba(87, 77, 51, 0.66);
+  }
+
+  .btn {
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    padding: 1em 5em;
+    color: #ffedd3;
+    text-transform: uppercase;
+    position: relative;
+    transition: .5s ease;
+  }
+  
+  .btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #59c9fd;
+    transition: .5s ease;
+  }
+  
+  .btn:hover {
+    color: #ffffff;
+    transition-delay: .5s;
+  }
+  
+  .btn:hover::before {
+    width: 100%;
+  }
+  
+  .btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #59c9fd;
+    transition: .4s ease;
+    z-index: -1;
+  }
+  
+  .btn:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: aliceblue;
+  }
+
+  @media screen and (max-width: 800px) {
+    .card  {
+        width: 200px;
+        height: 290px;
+        top: 7em;
+    }
+  }
+@media screen and (max-width: 800px) {
+    .card1:hover {
+        box-shadow: 0 0 0 -3px var(--background), 0 0 0 0 var(--green),
+             0 0 0 -3px var(--background), 0 0 0 0 var(--blue),
+             0 0 0 -3px var(--background), 0 0 0 0  var(--yellow),
+             0 0 0 -3px var(--background), 0 0 0 0  var(--orange),
+             0 0 0 -3px  var(--background), 0 0 0 0  var(--red);
+             margin-left: 1.3em;
+       }
+}
+@media screen and (max-width: 800px) {
+    .cardx {
+        margin-top: 8em;
+    }
+}
+
+  @media screen and (max-width: 800px) {
+    .InputContainer  {
+        width: 100%;
+        
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .cardc {
+        justify-content: center;
+        margin-left: 4.7em;
+    }
+  }
